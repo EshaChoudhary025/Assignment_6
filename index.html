@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title>Practice</title>
+
+<body>
+    <script>
+        //js console api
+        // console.log("Hello world");
+        // console.warn("This is a warning");
+        // console.error("This is an error");
+        // ways to print in js
+        // console.log("Hey");
+        // alert("Alert");
+        // document.write("Hey");
+
+        //Js Variables
+        // var n1=22;
+        // var n2=23;
+        // console.log(n1+n2);
+
+        //Data types in js
+        //Number
+        var num1 = 23;
+        var num2 = 32;
+
+        //String
+        var str1 = "Hey";
+        var str2 = 'Hey';
+
+        //object
+        var marks = {
+            esha: 26,
+            aakhya: 22,
+            kavya: 19
+        }
+        //console.log(marks);
+
+        //booleans
+        var a = true;
+        var b = false;
+        // console.log(b);
+
+        //undefined
+        var und = undefined;
+        //console.log(und);
+
+        var u;
+        // console.log(und);
+
+        //null
+        var n = null;
+        // console.log(n);
+        /*
+           arrays:collection of elements
+           there are 2 types of data types in JavaScript
+           1.Primitive Data Types: undefined,null,number,string,boolean,symbol(advance)
+           symbol:it gives unique key every time you use it
+           2.Reference Data Types:Arrays and objects
+        */
+        //Arrays
+        var arr = [1, 2, 3];
+        // console.log(arr);
+
+        //Operators
+        //Arithmetic operators
+        var a = 100;
+        var b = 10;
+        // console.log("The value of a+b is:",a+b);
+        // console.log("The value of a-b is:",a-b);
+        // console.log("The value of a*b is:",a*b);
+        // console.log("The value of a/b is:",a/b);
+
+        //Assignment Operators
+        var c = b;
+        // console.log(c);
+        c += 2;
+
+        //Comparision Operators
+        x = 2;
+        y = 3;
+        // console.log(x == y);
+        // console.log(x >= y);
+        // console.log(x <= y);
+        // console.log(x < y);
+        // console.log(x > y);
+
+        //Logical Operators
+        // console.log(true && true);
+        // console.log(true && false);
+        // console.log(false && true);
+        // console.log(false && false);
+
+        // console.log(true || true);
+        // console.log(true || false);
+        // console.log(false || true);
+        // console.log(false || false);
+
+        // console.log(!true);
+        // console.log(!false);
+
+
+        //Functions
+        //DRY: Don not repeat yourself
+        function sum(a, b) {
+            return a + b;
+        }
+
+        c = sum(2, 3);
+
+        //Conditionals in JS
+        //    var age =8;
+        //    if(age>=18){
+        //     console.log("You are eligile to vote");
+        //    }else{
+        //     console.log("You are not eligible");
+        //    }
+
+        //Loops
+        var arr = [1, 2, 3, 4, 5, 6];
+        // for(var i=0;i<arr.length;i++){
+        //     console.log(arr[i]);
+        // }
+
+        // arr.forEach (function(element){
+        //   console.log(element)
+        // })
+
+
+        // let j=0; //scope:inside a block
+        // const ac=0; //constant variables can't be override
+
+        let j = 0;
+        // while(j<arr.length){
+        //     console.log(arr[j]);
+        //     j++;
+        // }
+
+        // do {
+        //     console.log(arr[j]);
+        //     j++;
+        // } while (j < arr.length);
+
+        //break and continue
+        // var arr = [1, 2, 3, 4, 5, 6, 7];
+        // for (var i = 0; i < arr.length; i++) {
+        //     if (i == 2) {
+        //         //break;
+        //         continue;
+        //     }
+        //     console.log(arr[i]);
+        // }
+
+        let myArr = ["Fan", "Camera", 34, null];
+        //Array methods
+        // console.log(myArr.length);
+        //myArr.pop();
+        // console.log(myArr);
+        // myArr.push("esha");
+        // console.log(myArr);
+        //    myArr.shift();
+        //    console.log(myArr);
+        //myArr.toString();
+
+        //String methods in JS
+        // let myString = "Esha is a good girl";
+        // console.log(myString.length)
+        // console.log(myString.indexOf("Esha"))
+        // console.log(myString.slice(0,4))
+        // console.log(myString.replace("Esha","Kavya"))
+
+        //Date
+        // let myDate = new Date();
+        // console.log(myDate)
+        // console.log(myDate.getTime())
+        // console.log(myDate.getDay())
+
+        //DOM Manipulation
+        // document.getElementById (when you want to target an element by its id)
+       // document.getElementsByClassName
+        //Selecting using query
+        //sel = document.querySelector(); //returns an element
+
+        //Events
+         //click
+         //mouserover
+         //mouseout
+         //mouseup
+         //mousedown
+
+        //Arrow Functions
+        // function summ(a,b){
+        //     return a+b;
+        // }
+        // summ=(a,b)=>{
+        //     return a+b;
+        // }
+        // Set Timeout and set interval
+        //  logKaro = ()=>{
+        //     console.log("i am your log")
+        //  }
+        //  clr=setTimeout(logKaro,2000);
+         //  clr=setInterval(logKaro,2000); //repeatedly
+         //use clearTimeout(clr)/clearInterval to cancel setInterval/setTimeout
+
+          //Local Storage
+          //It helps you to save data in user's computer
+          //localStorage.setItem()
+          //localStorage.getItem()
+          // localStorage.removeItem()
+          // localStorage.clear()
+
+          //JSON(JS OBJECT NOTATION) OPEN STANDARD FILE FORMAT WHICH IS USED TO EXCHANGE DATA
+            obj = {name:"esha",length:1, a:{this:"that"}}
+            jso = JSON.stringify(obj)
+            console.log(jso)
+        //json does not accept single quote
+        // parsed = JSON.parse({name:"esha",length:1, a:{this:"that"}})
+        // console.log(parsed)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</head>
+
+</html>
